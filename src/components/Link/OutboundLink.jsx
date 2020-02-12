@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import GoogleAnalytics from 'react-ga'
+import { Text } from '@components/Text'
 
 const OutboundLink = ({ to, from, target, children, className }) => (
   <a
     href={to}
     target={target}
     className={className}
+    css={{ textDecoration: 'none' }}
     rel="noopener"
     onClick={() => {
       GoogleAnalytics.event({
@@ -16,7 +18,7 @@ const OutboundLink = ({ to, from, target, children, className }) => (
       })
     }}
   >
-    {children}
+    <Text color="grey.900">{children}</Text>
   </a>
 )
 

@@ -1,24 +1,28 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import { Link } from '@components/Link'
-import { Box } from '@components/Grid'
+import { Flex, Box } from '@components/Grid'
 import { Text } from '@components/Text'
 
-const Header = ({ siteTitle }) => (
-  <Box as="header" bg="primary.800" px={3} py={3} mb={4}>
-    <Box maxWidth="700px" m="0 auto">
-      <Link to="/" css={{ textDecoration: 'none' }}>
-        <Text as="h1" color="white">
-          {siteTitle}
-        </Text>
-      </Link>
-    </Box>
+const Header = () => (
+  <Box as="header" bg="grey.800" px={3} py={3}>
+    <Flex maxWidth="700px" m="0 auto">
+      <Box pr={4}>
+        <Link to="/" css={{ textDecoration: 'none' }}>
+          <Text as="h1" color="white">
+            Posts
+          </Text>
+        </Link>
+      </Box>
+      <Box>
+        <Link to="/about" css={{ textDecoration: 'none' }}>
+          <Text as="h1" color="white">
+            About
+          </Text>
+        </Link>
+      </Box>
+    </Flex>
   </Box>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string.isRequired,
-}
 
 export default Header

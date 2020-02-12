@@ -3,7 +3,7 @@ import Typography from 'typography'
 const typography = new Typography({
   title: 'Default',
   baseFontSize: '18px',
-  baseLineHeight: 1.45,
+  baseLineHeight: 1.5,
   headerFontFamily: [
     '-apple-system',
     'BlinkMacSystemFont',
@@ -29,7 +29,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   scaleRatio: 2.441,
-  headerWeight: 700,
+  headerWeight: 600,
   overrideStyles: () => ({
     img: {
       marginBottom: 0,

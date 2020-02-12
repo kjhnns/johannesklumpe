@@ -1,20 +1,21 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { Link } from '@components/Link'
 import { Layout } from '@components/Layout'
-
 import { SEO } from '@components/SEO'
-import { Text } from '@components/Text'
-
-import { Link } from 'gatsby'
 
 const PostLink = ({ post }) => (
   <li>
     <Link to={post.frontmatter.path}>
-      {post.frontmatter.title} ({post.frontmatter.date})
+      ({post.frontmatter.date}) {post.frontmatter.title}
     </Link>
   </li>
 )
+
+PostLink.propTypes = {
+  post: PropTypes.node.isRequired,
+}
 
 const IndexPage = ({
   data: {
@@ -28,12 +29,13 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO />
-      <Text as="h2" mb={3}>
-        <h1>Blog Posts</h1>
-        <ul>{Posts}</ul>
-      </Text>
+      <ul>{Posts}</ul>
     </Layout>
   )
+}
+
+IndexPage.propTypes = {
+  data: PropTypes.node.isRequired,
 }
 
 export default IndexPage

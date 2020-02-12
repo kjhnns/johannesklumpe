@@ -11,11 +11,11 @@ const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyles />
-      <Header siteTitle="Home" />
-      <Box maxWidth="700px" m="0 auto" px={3}>
+      <Header />
+      <Box maxWidth="700px" m="0 auto" py={4}>
         {children}
       </Box>
-      <Footer>johannesklumpe at gmail dot com</Footer>
+      <Footer />
     </>
   </ThemeProvider>
 )

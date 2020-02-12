@@ -12,8 +12,8 @@ const NotFoundPage = () => (
     <Text as="h2" mb={3}>
       Not found
     </Text>
-    <Text>
-      You just hit a route that doesn&#39;t exist... the sadness.
+    <Text mb={5}>
+      You just hit a route that doesn&#39;t exist.
       <Br />
       <Link to="/">Take me home.</Link>
     </Text>

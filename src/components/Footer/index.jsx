@@ -1,19 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import { Box } from '@components/Grid'
+import { Flex, Box } from '@components/Grid'
 
-const Footer = ({ children }) => (
-  <Box as="footer" bg="grey.300" p={3} mb={3}>
-    {children}
+const Footer = () => (
+  <Box bg="grey.300" p={3} mb={4}>
+    <Flex maxWidth="700px" m="0 auto">
+      <Box as="footer">johannesklumpe at gmail dot com</Box>
+    </Flex>
   </Box>
 )
-
-Footer.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-}
 
 export default Footer
