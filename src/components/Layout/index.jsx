@@ -12,7 +12,7 @@ const Layout = ({ children }) => (
     <>
       <GlobalStyles />
       <Header />
-      <Box maxWidth="700px" m="0 auto" p={3}>
+      <Box maxWidth="700px" m="0 auto" px={3} py={4}>
         {children}
       </Box>
       <Footer />
