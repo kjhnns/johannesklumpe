@@ -11,6 +11,7 @@ module.exports = {
     titleTemplate: website.titleTemplate,
     description: website.description,
     image: website.image,
+    favicon: website.favicon,
     siteLanguage: website.siteLanguage,
     headline: website.headline,
     author: website.author,

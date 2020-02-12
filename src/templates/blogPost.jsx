@@ -10,7 +10,13 @@ const BlogPostTemplate = function Template({ data }) {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <SEO />
+      <SEO
+        image={frontmatter.metaImage.childImageSharp.fluid.src}
+        title={frontmatter.title}
+        pathname={frontmatter.path}
+        articleMeta={{ datePublished: frontmatter.date }}
+        isArticle
+      />
       <div className="blog-post-container">
         <div className="blog-post">
           <Text color="grey.700">{frontmatter.date}</Text>
@@ -40,6 +46,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        metaImage {
+          childImageSharp {
+            fluid(maxWidth: 512) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     }
   }
