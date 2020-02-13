@@ -11,7 +11,6 @@ module.exports = {
     titleTemplate: website.titleTemplate,
     description: website.description,
     image: website.image,
-    favicon: website.favicon,
     siteLanguage: website.siteLanguage,
     headline: website.headline,
     author: website.author,
@@ -62,6 +61,9 @@ module.exports = {
         name: website.title,
         short_name: website.shortName,
         description: website.description,
+        start_url: `${pathPrefix}/?utm_source=a2hs`,
+        display: `standalone`,
+        icon: website.favicon,
       },
     },
     {
