@@ -16,7 +16,7 @@ const AboutPage = () => (
       <ul>
         <li>
           <OutboundLink to="https://www.meetup.com/de-DE/Grunderfruhstuck-Rhein-Main/">
-            Founder's Breakfast Rhein-Main
+            Founder&apos;s Breakfast Rhein-Main
           </OutboundLink>
         </li>
         <li>
