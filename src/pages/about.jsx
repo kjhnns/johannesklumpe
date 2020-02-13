@@ -15,13 +15,18 @@ const AboutPage = () => (
       <h2>Projects</h2>
       <ul>
         <li>
+          <OutboundLink to="https://www.meetup.com/de-DE/Grunderfruhstuck-Rhein-Main/">
+            Founder's Breakfast Rhein-Main
+          </OutboundLink>
+        </li>
+        <li>
           <OutboundLink to="http://junto-app.com/">
-            junto – social habit tracking
+            junto – Social Habit Tracking
           </OutboundLink>
         </li>
         <li>
           <OutboundLink to="https://sourceforge.net/projects/mymates/">
-            myMates - private social network (archived)
+            myMates - Private Social Network (archived)
           </OutboundLink>
         </li>
       </ul>

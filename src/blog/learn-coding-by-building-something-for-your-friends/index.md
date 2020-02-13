@@ -1,7 +1,7 @@
 ---
 path: '/blog/learn-coding-by-building-something-for-your-friends'
 date: '2020-02-11'
-title: 'Learn coding by building something for your friends'
+title: 'Learn Coding by Building Something for Your Friends'
 metaImage: './images/002.jpg'
 ---
 
