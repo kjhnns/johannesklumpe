@@ -7,8 +7,27 @@ import { Box } from '@components/Grid'
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
-    Hi my name is Johannes Klumpe.
     <Box my={3}>
+      <h1>About</h1>
+      <p>Hi my name is Johannes Klumpe.</p>
+    </Box>
+    <Box my={3}>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <OutboundLink to="http://junto-app.com/">
+            junto – social habit tracking
+          </OutboundLink>
+        </li>
+        <li>
+          <OutboundLink to="https://sourceforge.net/projects/mymates/">
+            myMates - private social network (archived)
+          </OutboundLink>
+        </li>
+      </ul>
+    </Box>
+    <Box my={3}>
+      <h2>Other places</h2>
       <ul>
         <li>
           <OutboundLink to="https://github.com/kjhnns">Github</OutboundLink>
