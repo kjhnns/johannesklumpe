@@ -35,10 +35,13 @@ const AboutPage = () => (
       <h2>Other places</h2>
       <ul>
         <li>
-          <OutboundLink to="https://github.com/kjhnns">Github</OutboundLink>
+          <OutboundLink to="https://t.me/kjhnns">Telegram</OutboundLink>
         </li>
         <li>
           <OutboundLink to="https://twitter.com/kjhnns">Twitter</OutboundLink>
+        </li>
+        <li>
+          <OutboundLink to="https://github.com/kjhnns">Github</OutboundLink>
         </li>
         <li>
           <OutboundLink to="https://linkedin.com/in/klumpe/">
