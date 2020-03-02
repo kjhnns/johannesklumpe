@@ -9,7 +9,7 @@ metaImage: './images/002.jpg'
 
 - Building something for the people that you care about will always give you a strong purpose.
 - Launching a side-project is not about HOW you solve a problem but rather about WHY you solve a problem.
-- Coding is like lego – go one step at a time and learn it while you do it. It is easy to find everything you need online.
+- Coding is like lego – go one step at a time and learn it while you do it. You will find everything you need online.
 
 ---
 
@@ -20,7 +20,7 @@ At that time my hometown friends and I were into online gaming. To better commun
 ![Gaming website](./images/001.jpg)
 Figure 1. Gaming website
 
-Since my friends became my first users, I always had immediate feedback and I relaunched the website several times with different feature sets and new designs (designs came from the group). I would soon start to realize that not every feature really solved a problem or much less addressed a need. Though, the more features I designed the more I started to understand data structures and algorithms. Eventually, the website became a private social network where we had a message board, a news feed, a chat, a photo gallery, a quotation repository, and a polling feature.
+Since my friends became my first users, I always had immediate feedback and I relaunched the website several times with different feature sets and new designs (designs came from the group). I would soon start to realize that not every feature really solved a problem or much less addressed any need of this group. Though, the more features I designed the more I started to understand data structures and algorithms. Eventually, the website became a private social network where we had a message board, a news feed, a chat, a photo gallery, a quotation repository, and a polling feature.
 
 ![myMates - private social network](./images/002.jpg)
 Figure 2. myMates - private social network
@@ -30,6 +30,6 @@ My friends and I used the website on a daily basis. I started to realize that th
 ![Downloads of myMates on SourceForge](./images/003.png)
 Figure 3. Downloads of myMates on SourceForge
 
-It came as a surprise to me that people were interested in the product. Yet most of the installations came from other developers who studied the codebase. I still felt like this side-project had merit for a small community of real users. For example, I got an email from a church community that hosted an instance for their kids to have a safe place for them on the internet.
+It came as a surprise to me that people were interested in the product. Yet most of the installations came from other developers who studied the codebase. Nevertheless, I still feel like this side-project had merit for a small community of real users. For example, I got an email from a church community that hosted an instance for their kids to have a safe place for them on the internet.
 
-Although I never managed to monetize the product and due to my bachelor studies the project halted, I still learned a lot. Through the work on the features and the lessons that I learned from unused features, I did not only pick up how to code but also learned user-centric product design.
+Although I never managed to monetize the product and due to my bachelor studies the project halted, I still learned a lot from this experience. I came to the conclusion that there is no right or wrong way to build something. If it is interesting to you, you should just start doing it in your own way. Money and attention can be a motivation but ideally you are interested in what you do. So much that you are willing to do it for free as long as it serves a purpose.

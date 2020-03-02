@@ -26,7 +26,7 @@ const AboutPage = () => (
         </li>
         <li>
           <OutboundLink to="https://sourceforge.net/projects/mymates/">
-            myMates - Private Social Network (archived)
+            myMates – Private Social Network (archived)
           </OutboundLink>
         </li>
       </ul>
