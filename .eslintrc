@@ -58,7 +58,9 @@
     "react/destructuring-assignment": [
       "error",
       "always",
-      { "ignoreClassFields": true }
+      {
+        "ignoreClassFields": true
+      }
     ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",

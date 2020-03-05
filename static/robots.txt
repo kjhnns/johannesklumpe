@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://johannesklumpe.com/sitemap.xml

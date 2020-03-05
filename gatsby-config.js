@@ -1,83 +1,62 @@
-const website = require('./config/website')
-
-const pathPrefix = website.pathPrefix === `/` ? `` : website.pathPrefix
+require(`dotenv`).config({
+  path: `.env`,
+})
 
 module.exports = {
-  pathPrefix: website.pathPrefix,
   siteMetadata: {
-    pathPrefix,
-    siteUrl: website.url + pathPrefix,
-    title: website.title,
-    titleTemplate: website.titleTemplate,
-    description: website.description,
-    image: website.image,
-    siteLanguage: website.siteLanguage,
-    headline: website.headline,
-    author: website.author,
-    twitter: website.twitter,
+    author: ``,
+    siteUrl: `https://www.johannesklumpe.com/`,
+    siteHeadline: `This is the personal website of Johannes Klumpe.`,
+    titleTemplate: `%s — Johannes Klumpe`,
+    siteImage: `/meta-image-default.png`,
+    siteTitle: `Johannes`,
+    siteTitleAlt: `Personal Website of Johannes Klumpe`,
+    siteDescription: `This is the personal website of Johannes Klumpe.`,
+    siteLanguage: `en`,
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
+  plugins: [{
+      resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog`,
-        path: `${__dirname}/src/blog`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        displayName: process.env.NODE_ENV !== `production`,
-        fileName: false,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `./config/typography.js`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-lodash`,
-      options: {
-        disabledFeatures: [`shorthands`, `cloning`, `currying`],
-      },
-    },
-    `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: website.title,
-        short_name: website.shortName,
-        description: website.description,
-        start_url: `${pathPrefix}/?utm_source=a2hs`,
-        display: `standalone`,
-        icon: website.favicon,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
+        navigation: [{
+            title: `Blog`,
+            slug: `/blog`,
+          },
           {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 800,
-            },
+            title: `About`,
+            slug: `/about`,
+          },
+        ],
+        externalLinks: [{
+            name: `Twitter`,
+            url: `https://twitter.com/kjhnns`,
+          },
+          {
+            name: `Email`,
+            url: `mailto:johannes.klumpe@gmail.com`,
           },
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    //   },
+    // },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Personal Website of Johannes Klumpe`,
+        short_name: `Johannes`,
+        description: `This is the personal website of Johannes Klumpe.`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#3aafa9`,
+        display: `standalone`,
+        icon: `./static/favicon.png`,
+      },
+    },
+    `gatsby-plugin-netlify`,
   ],
 }
