@@ -9,7 +9,7 @@ module.exports = {
     siteHeadline: `This is the personal website of Johannes Klumpe.`,
     titleTemplate: `%s — Johannes Klumpe`,
     siteImage: `/meta-image-default.png`,
-    siteTitle: `Johannes`,
+    siteTitle: `Johannes Klumpe`,
     siteTitleAlt: `Personal Website of Johannes Klumpe`,
     siteDescription: `This is the personal website of Johannes Klumpe.`,
     siteLanguage: `en`,

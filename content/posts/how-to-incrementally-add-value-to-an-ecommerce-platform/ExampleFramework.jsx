@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui'
+import { tailwind } from '@theme-ui/presets'
 import { Flex } from '@theme-ui/components'
 
 const Box = {
@@ -7,7 +8,9 @@ const Box = {
   minHeight: '120px',
   display: 'flex',
   flexDirection: 'column',
-  border: '1px #000 solid',
+  borderStyle: `solid`,
+  borderWidth: `1px`,
+  borderColor: `heading`,
   justifyContent: 'center',
   alignItems: 'center',
 }
@@ -16,7 +19,7 @@ const Headline = {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  color: '#808080',
+  color: tailwind.colors.gray[5],
 }
 
 const Metric = {
@@ -40,8 +43,8 @@ const ExampleFramework = () => (
     <Styled.div
       sx={{
         ...Box,
-        borderLeft: ['1px #000 solid', 0],
-        borderTop: [0, '1px #000 solid'],
+        borderLeftWidth: ['1px', '0'],
+        borderTopWidth: ['0', '1px'],
       }}
     >
       <Styled.div sx={Headline}>INTEREST</Styled.div>
@@ -50,8 +53,8 @@ const ExampleFramework = () => (
     <Styled.div
       sx={{
         ...Box,
-        borderLeft: ['1px #000 solid', 0],
-        borderTop: [0, '1px #000 solid'],
+        borderLeftWidth: ['1px', '0'],
+        borderTopWidth: ['0', '1px'],
       }}
     >
       <Styled.div sx={Headline}>DESIRE</Styled.div>
@@ -60,8 +63,8 @@ const ExampleFramework = () => (
     <Styled.div
       sx={{
         ...Box,
-        borderLeft: ['1px #000 solid', 0],
-        borderTop: [0, '1px #000 solid'],
+        borderLeftWidth: ['1px', '0'],
+        borderTopWidth: ['0', '1px'],
       }}
     >
       <Styled.div sx={Headline}>ACTION</Styled.div>
