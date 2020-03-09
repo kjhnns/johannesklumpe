@@ -2,48 +2,39 @@
 import { jsx, Styled } from 'theme-ui'
 import { Flex } from '@theme-ui/components'
 
-const Denominator = {
+const Centered = {
+  alignItems: `center`,
+  justifyContent: `center`,
+  textAlign: 'center',
+}
+
+const Numerator = {
+  ...Centered,
   borderBottomStyle: `solid`,
   borderBottomWidth: `1px`,
   borderBottomColor: `heading`,
-  textAlign: 'center',
 }
 
 const UserCatalogFit = () => (
   <Flex
     sx={{
-      alignItems: `center`,
-      justifyContent: `center`,
+      ...Centered,
       flexDirection: `row`,
+      fontStyle: 'italic',
     }}
   >
-    <Styled.div
-      sx={{
-        alignItems: `center`,
-        justifyContent: `center`,
-      }}
-    >
-      user_catalog_fit
-    </Styled.div>
+    <Styled.div sx={Centered}>user_catalog_fit</Styled.div>
     <Styled.div sx={{ px: '8px' }}>=</Styled.div>
     <Flex
       sx={{
+        ...Centered,
         flexDirection: `column`,
-        alignItems: `center`,
-        justifyContent: `center`,
       }}
     >
-      <Styled.div sx={Denominator}>
+      <Styled.div sx={Numerator}>
         users on the catalog page that click on a sofa model
       </Styled.div>
-      <Styled.div
-        sx={{
-          alignItems: `center`,
-          justifyContent: `center`,
-        }}
-      >
-        users on the catalog page
-      </Styled.div>
+      <Styled.div sx={Centered}>users on the catalog page</Styled.div>
     </Flex>
   </Flex>
 )
